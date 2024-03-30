@@ -9,7 +9,7 @@ interface User {
   updated_at: string;
 }
 
-export const handler: Handlers<User | null> = {
+export const handler: { GET(_, ctx): Promise<any> } = {
   async GET(_, ctx) {
     const { username } = ctx.params;
     const resp = await fetch(`https://api.github.com/users/${username}`);
@@ -32,16 +32,19 @@ export default function Page({ data }: PageProps<User | null>) {
 
 
   return (
-    <div>
-      <img src={data.avatar_url} width={64} height={64} />
-      <h1>{data.name}</h1>
-      <p>{data.login}</p>
-      <p>
-      Account was created <CountFrom target={creationDate.toISOString()} /> seconds ago.
-    </p>
-    <p>
-      Account was updated <CountFrom target={updateDate.toISOString()} /> seconds ago.
-    </p>
-    </div>
+      <div>
+        <div className="topnav">
+          <a href="github">hjy</a>
+        </div>
+        <img src={data.avatar_url} width={64} height={64}/>
+        <h1>{data.name}</h1>
+        <p>{data.login}</p>
+        <p>
+          Account was created <CountFrom target={creationDate.toISOString()}/> seconds ago.
+        </p>
+        <p>
+          Account was updated <CountFrom target={updateDate.toISOString()}/> seconds ago.
+        </p>
+      </div>
   );
 }
