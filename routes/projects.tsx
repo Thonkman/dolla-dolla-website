@@ -46,8 +46,8 @@ export default function projectsPage({data}: PageProps<Data>) {
                 </div>
                 <div className="aroundProjectBox">
                     <div className="projectBox">
-                        <a href="#">projekt</a>
                         <img src="favicon.ico" alt="temp image" style="width:200px;height:200px"/>
+                        <a href="#">projekt</a>
                     </div>
                 </div>
             </main>
