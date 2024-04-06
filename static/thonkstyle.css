@@ -50,10 +50,48 @@ body {
     background-color: #333;
     margin: auto;
     width: 60%;
-    border: 5px solid #333;
+    border: 15px solid #333;
     border-radius: 12px;
     text-align: left;
     color: lightgray;
+    display: grid;
+    grid-template-columns: 25% 10% 25% 35%;
+    grid-template-rows: 25% 75%;
+    grid-gap: 15px;
+}
+.image-slot {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    /*background-color: #04AA6D;*/
+    margin-bottom: 7%;
+}
+.title-slot {
+    /*background-color: aqua;*/
+    grid-column-start: 3;
+    grid-column-end: 5;
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: xx-large;
+}
+.desc-slot {
+    /*background-color: brown;*/
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    margin-bottom: 7%;
+}
+.projectBox a {
+
+}
+.projectBox p {
+    background-color: rebeccapurple;
+    width: fit-content;
+}
+.projectBox img {
+
 }
 .topnav {
     background-color: #333;

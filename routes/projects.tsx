@@ -40,14 +40,13 @@ export default function projectsPage({data}: PageProps<Data>) {
                         <label for="?modName"></label>
                         <input type="text" id="?modName" name="?modName" className="formInput" value={query}/>
                     </form>
-                    <ul>
-                        {results.map((name) => <li key={name}>{name}</li>)}
-                    </ul>
                 </div>
                 <div className="aroundProjectBox">
                     <div className="projectBox">
-                        <img src="favicon.ico" alt="temp image" style="width:200px;height:200px"/>
-                        <a href="#">projekt</a>
+                        <div className="image-slot"><img src="favicon.ico" alt="temp image" style="width:200px;height:200px"/></div>
+                        <div className="title-slot">Affable Armours</div>
+                        <div className="desc-slot">The mod that adds a few alternatives to netherite for end game armours. I made this mod because I felt like the turtle shell could use some friends (with unique names) and other options for armour at the later stages of progression, with their own unique utilities. Plus there also exists an entire turtle shell material in the vanilla code!</div>
+
                     </div>
                 </div>
             </main>
