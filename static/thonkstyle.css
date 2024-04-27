@@ -83,6 +83,16 @@ body {
     grid-row-end: 2;
     margin-bottom: 7%;
 }
+.view-button {
+    grid-row: 2;
+    grid-column: 4;
+    /*background-color: #04AA6D;*/
+    margin-left: 55%;
+    margin-top: 25%;
+    font-size: larger;
+    /*font-style: italic;*/
+    font-weight: bold;
+}
 .projectBox a {
 
 }

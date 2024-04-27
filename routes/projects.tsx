@@ -47,6 +47,7 @@ export default function projectsPage({data}: PageProps<Data>) {
                         <div className="image-slot"><img src="favicon.ico" alt="temp image" style="width:200px;height:200px"/></div>
                         <div className="title-slot">Affable Armours</div>
                         <div className="desc-slot">The mod that adds a few alternatives to netherite for end game armours. I made this mod because I felt like the turtle shell could use some friends (with unique names) and other options for armour at the later stages of progression, with their own unique utilities. Plus there also exists an entire turtle shell material in the vanilla code!</div>
+                        <a className="view-button" href="https://github.com/Thonkman/AffableArmours">View ></a>
 
                     </div>
                 </div>
