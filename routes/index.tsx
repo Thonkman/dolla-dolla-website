@@ -9,6 +9,7 @@ export default function Home() {
             <Head>
                 <title>Thonk E. Mann</title>
                 <link rel="stylesheet" href="thonkstyle.css"></link>
+                <link rel="icon" type="image/x-icon" href="Thonkery.png"></link>
             </Head>
             <main>
                 <div className="topnav">

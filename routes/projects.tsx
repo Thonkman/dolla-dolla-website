@@ -28,10 +28,11 @@ export default function projectsPage({data}: PageProps<Data>) {
             <Head>
                 <title>Projects</title>
                 <link rel="stylesheet" href="thonkstyle.css"/>
+                <link rel="icon" type="image/x-icon" href="Thonkery.png"></link>
             </Head>
             <main>
                 <div className="topnav">
-                    <a href=".">Thonkman.net</a>
+                <a href=".">Thonkman.net</a>
                     <a href="https://github.com/Thonkman">Github</a>
                     <a href="projects">Projects</a>
                 </div>
